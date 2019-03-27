@@ -1,0 +1,35 @@
+{
+  "name": "reason-react-native-gesture-handler",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean-build": "bsb -clean-world -make-world",
+    "install::dev": "yarn && install-self-peers -- --ignore-scripts",
+    "pub": "npx np --yolo"
+  },
+  "author": "Lewis Chung <@_lewisf>",
+  "license": "MIT",
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript",
+    "react-native"
+  ],
+  "homepage": "https://github.com/lewisf/reason-react-native-gesture-handler",
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/lewisf/reason-react-native-gesture-handler.git"
+  },
+  "devDependencies": {
+    "@team-griffin/install-self-peers": "^1.1.1",
+    "bs-platform": "^5.0.0"
+  },
+  "peerDependencies": {
+    "bs-react-native": "^0.10.0",
+    "react-native-gesture-handler": "1.1.0",
+    "reason-react": "https://github.com/reasonml/reason-react.git#hooks"
+  }
+}
